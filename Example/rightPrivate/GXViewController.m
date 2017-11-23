@@ -7,7 +7,7 @@
 //
 
 #import "GXViewController.h"
-
+#import <GXNetWork/GXNetWork.h>
 @interface GXViewController ()
 
 @end
@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NetWork *net = [NetWork new];
+    [net get:@"http://localhost:3003/user" params:nil success:^(id success) {
+        NSLog(@"%@",success);
+    } fail:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning

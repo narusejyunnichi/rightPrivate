@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'rightPrivate_Example' do
   pod 'rightPrivate', :path => '../'
-
+  pod 'AFNetworking' , '~> 3.0'
   target 'rightPrivate_Tests' do
     inherit! :search_paths
 

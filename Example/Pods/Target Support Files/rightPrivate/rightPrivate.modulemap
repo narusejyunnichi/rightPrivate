@@ -1,0 +1,6 @@
+framework module rightPrivate {
+  umbrella header "rightPrivate-umbrella.h"
+
+  export *
+  module * { export * }
+}
