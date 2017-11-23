@@ -557,6 +557,7 @@
 		EDC7D763F812F6ADF64918626D844FE3 /* Pods-rightPrivate_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rightPrivate_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		EDE343AE6404420C740405722820FB61 /* Pods-rightPrivate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-rightPrivate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EDEBC82BE6A01B401A7BA4F846FD1868 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		EE388A2B08C144685C58A7947A161D86 /* GXNetWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GXNetWork.framework; path = rightPrivate/Assets/GXNetWork.framework; sourceTree = "<group>"; };
 		EF55C4448BFF5D432DEAEC9FFAE2F59B /* KWUserDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWUserDefinedMatcher.m; path = Classes/Matchers/KWUserDefinedMatcher.m; sourceTree = "<group>"; };
 		F1603AD55CBC2911FB4390BF1339433F /* KWGenericMatchEvaluator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWGenericMatchEvaluator.m; path = Classes/Matchers/KWGenericMatchEvaluator.m; sourceTree = "<group>"; };
 		F16EE81C723EB4F26E6F5D4241C2F607 /* KWBeZeroMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeZeroMatcher.m; path = Classes/Matchers/KWBeZeroMatcher.m; sourceTree = "<group>"; };
@@ -720,6 +721,14 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
+		60040C76CA6B9D6E0093764F2CB83AC6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FE191EFC4B40AAEFB96278ACF6DC0A0 /* rightPrivate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		6B06740C1D6788A76D8F775F061D8281 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +739,15 @@
 				1F906F4EDBDD66FDF80B789456F0CAA4 /* Pods_rightPrivate_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6FE191EFC4B40AAEFB96278ACF6DC0A0 /* rightPrivate */ = {
+			isa = PBXGroup;
+			children = (
+				FE84BE7E90125631330596BF75A6F69B /* Frameworks */,
+			);
+			name = rightPrivate;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		785553737B06AFC3DA711DDEB7D56194 /* Frameworks */ = {
@@ -744,7 +762,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B2A26E6E8FF9D7A27A81DD9AAC2A01C5 /* Development Pods */,
+				60040C76CA6B9D6E0093764F2CB83AC6 /* Development Pods */,
 				785553737B06AFC3DA711DDEB7D56194 /* Frameworks */,
 				C4148CCFE2AE04FFACF56F4684133045 /* Pods */,
 				6B06740C1D6788A76D8F775F061D8281 /* Products */,
@@ -990,14 +1008,6 @@
 			path = Kiwi;
 			sourceTree = "<group>";
 		};
-		B2A26E6E8FF9D7A27A81DD9AAC2A01C5 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD355BF1F47C256CA3D215657154C468 /* rightPrivate */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		B43A9ED24CAAAA8A67A2A910AAC1FECA /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -1065,14 +1075,6 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		DD355BF1F47C256CA3D215657154C468 /* rightPrivate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = rightPrivate;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		EA90C4FBADEC3A961D02DBB4B7F82125 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -1100,6 +1102,14 @@
 			);
 			name = "Pods-rightPrivate_Example";
 			path = "Target Support Files/Pods-rightPrivate_Example";
+			sourceTree = "<group>";
+		};
+		FE84BE7E90125631330596BF75A6F69B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE388A2B08C144685C58A7947A161D86 /* GXNetWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

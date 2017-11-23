@@ -19,7 +19,7 @@
     "UIKit",
     "Foundation"
   ],
-  "vendored_frameworks": "rightPrivate/Example/rightPrivate/GXNetWork.framework",
+  "vendored_frameworks": "rightPrivate/Assets/GXNetWork.framework",
   "dependencies": {
     "AFNetworking": [
       "~> 3.0"

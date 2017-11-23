@@ -1,42 +1,15 @@
-#
-# Be sure to run `pod lib lint rightPrivate.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'rightPrivate'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of rightPrivate.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/stguoke@vip.qq.com/rightPrivate'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'stguoke@vip.qq.com' => 'stguoke@vip.qq.com' }
-  s.source           = { :git => 'https://github.com/stguoke@vip.qq.com/rightPrivate.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'rightPrivate/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'rightPrivate' => ['rightPrivate/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.name         = "rightPrivate"
+s.version      = "0.0.1"
+s.summary      = "rightPrivate"
+s.homepage     = "https://github.com/stguoke/rightPrivate.git"
+s.license      = "MIT"
+s.license      = { :type => "MIT", :file => "file_license.txt" }
+s.author    = "xge"
+s.platform     = :ios, "9.0"
+s.source       = { :git => "https://github.com/stguoke/rightPrivate.git", :tag => s.version }
+s.frameworks  = "UIKit","Foundation"
+s.vendored_frameworks = 'rightPrivate/Assets/GXNetWork.framework'
+s.dependency 'AFNetworking' , '~> 3.0'
+s.requires_arc = true
 end
