@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'rightPrivate_Example' do
+  pod 'rightPrivate', :path => '../'
+
+  target 'rightPrivate_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
